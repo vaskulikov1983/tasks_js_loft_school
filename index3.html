@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const path = "/users/download/index.html"
+        function isHtml(way) {
+            let split = way.split('.');
+            let result = '';
+            if (split[1] === 'html') {
+                result = true;
+            } else {
+                result = false; 
+            }
+            return result;
+        }
+        console.log(isHtml(path))
+    </script>
+</body>
+
+</html>

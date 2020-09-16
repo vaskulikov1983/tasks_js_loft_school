@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const workers = [
+		{"name":"John","salary":500},
+		{"name":"Mike","salary":1300},
+		{"name":"Linda","salary":1500},
+        {'name':'John', 'salary': 2500},
+        {"name":"Sam","salary":900},
+        {"name":"Samanta","salary":1500}
+        ];
+
+        function getWorthyWorkers(a) {
+            let result = [];
+            for (let i = 0; i < a.length; i++) {
+                if (a[i]['salary'] > 1000) {
+                    result.push(a[i]['name']);
+                }
+            }
+            return result;
+        }
+        console.log(getWorthyWorkers(workers))
+    </script>
+</body>
+</html>
